@@ -1,6 +1,6 @@
 # FastNetwork
 
-FastNetwork is a platform for smart, fast networking. We offer users more than just mindless swiping through profiles; we provide the opportunity to find conversational partners tailored to your specific goals.
+FastNetwork is a platform for smart, fast networking. We offer users more than just mindless swiping through profiles; we provide the opportunity to find conversational partners tailored to your specific goals. 
 
 ## About the Project
 
