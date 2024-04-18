@@ -1,5 +1,5 @@
 import styles from './loadingRequest.module.scss';
-import {TextareaRequest} from "@/app/components/requests/textareaRequest";
+import {TextareaRequest} from "@/app/components/requests/textareaRequest/textareaRequest";
 import React from "react";
 import Loader from '@/app/img/loader.gif'
 import Image from "next/image";

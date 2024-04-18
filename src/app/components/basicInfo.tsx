@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import styles from './form.module.scss';
+import styles from './form/form.module.scss';
 import {Input, Select} from "@/app/components/ui-components";
 import {useForm} from 'react-hook-form';
 

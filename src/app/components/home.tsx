@@ -10,11 +10,11 @@ import {
     Route
 } from "react-router-dom";
 
-import Form from './form'
-import Training from './training';
+import Form from './form/form'
+import Training from './training/training';
 import React, {useEffect, useState} from "react";
 import MyRequest from "@/app/components/requests/myRequests/myRequest";
-import CreatingRequest from "@/app/components/requests/creatingRequest";
+import CreatingRequest from "@/app/components/requests/creatingRequest/creatingRequest";
 import LoadingRequest from "@/app/components/requests/loadingRequest";
 
 function Loading() {

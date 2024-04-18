@@ -1,6 +1,6 @@
 import styles from './training.module.scss';
 import React, { useState } from "react";
-import {Button} from './ui-components';
+import {Button} from '../ui-components';
 import {NavLink} from "react-router-dom";
 
 export default function Training() {

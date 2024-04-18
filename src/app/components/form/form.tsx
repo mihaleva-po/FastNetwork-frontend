@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import styles from './form.module.scss';
-import stylesTrain from './training.module.scss';
+import stylesTrain from '../training/training.module.scss';
 import {Button} from "@/app/components/ui-components";
 import {useForm} from 'react-hook-form';
 import BasicInfo from "@/app/components/basicInfo";
-import Sphere from "@/app/components/sphere";
+import Sphere from "@/app/components/sphere/sphere";
 import {NavLink, useNavigate} from "react-router-dom";
 
 const options = [

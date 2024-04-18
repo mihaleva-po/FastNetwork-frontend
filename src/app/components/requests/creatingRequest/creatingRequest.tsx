@@ -2,7 +2,7 @@ import styles from './creatingRequest.module.scss';
 import React from "react";
 import {Button} from "@/app/components/ui-components";
 import {useNavigate} from 'react-router-dom';
-import {TextareaRequest} from "@/app/components/requests/textareaRequest";
+import {TextareaRequest} from "@/app/components/requests/textareaRequest/textareaRequest";
 
 const CreatingRequest = () => {
 
