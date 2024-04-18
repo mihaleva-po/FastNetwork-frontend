@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+
+  .heading {
+	margin: 77px 0 23px 0;
+	position: relative;
+
+	h4 {
+	  margin: 0 auto;
+	  color: var(--Greyscale-900, #212121);
+	  text-align: center;
+	  font-size: 24px;
+	  font-style: normal;
+	  font-weight: 700;
+	  line-height: 160%;
+	  width: 226px;
+	}
+
+	.icon {
+	  position: absolute;
+	  top: 5px;
+	  right: 80px;
+	  margin-right: 30px;
+	  display: flex;
+	  width: 28px;
+	  height: 28px;
+	  padding: 3.5px 2.916px 2.404px 2.334px;
+	  justify-content: center;
+	  align-items: center;
+	  flex-shrink: 0;
+	}
+  }
+
+  .textarea {
+	margin-top: 10%;
+	justify-content: center;
+	display: flex;
+  }
+
+  .loading {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10%;
+
+  }
+}
+
+.container-menu {
+  margin-bottom: 20px;
+}
