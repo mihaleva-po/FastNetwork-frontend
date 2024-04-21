@@ -91,7 +91,7 @@ export default function MyRequest() {
 
             </div>
             <div className={styles['menu']}>
-                <Menu/>
+                <Menu selectedBlock={0}/>
             </div>
 
             {isModal ?

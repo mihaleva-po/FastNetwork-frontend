@@ -12,10 +12,12 @@ import {
 
 import Form from './form/form'
 import Training from './training/training';
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import MyRequest from "@/app/components/requests/myRequests/myRequest";
 import CreatingRequest from "@/app/components/requests/creatingRequest/creatingRequest";
 import LoadingRequest from "@/app/components/requests/loadingRequest";
+import Settings from "@/app/components/settings/settings";
+import {Questions} from "@/app/components/questions/questions";
 
 function Loading() {
     return (
@@ -52,6 +54,8 @@ function Screen() {
                 <Route path="/myRequests" element={<MyRequest/>}/>
                 <Route path="/createRequest" element={<CreatingRequest/>}/>
                 <Route path="/readyRequest" element={<LoadingRequest/>}/>
+                <Route path="/settings" element={<Settings/>}/>
+                <Route path="/questions" element={<Questions/>}/>
             </Routes>
         </div>
     );

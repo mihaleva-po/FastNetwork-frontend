@@ -1,0 +1,16 @@
+
+.container-chapter {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5px;
+
+  h6 {
+	color: var(--Greyscale-900, #212121);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 160%; /* 28.8px */
+  }
+}

@@ -1,0 +1,124 @@
+
+.container {
+  padding-top: 5%;
+
+  .title {
+	position: relative;
+	gap: 26%;
+	margin-top: 4%;
+	display: flex;
+	color: var(--Greyscale-900, #212121);
+	text-align: center;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 160%;
+	align-items: center;
+	justify-content: center;
+	padding-left: 5%;
+
+	svg {
+	  position: absolute;
+	  top: 13px;
+	  left: 39px;
+	}
+  }
+
+  .container-chapter {
+	width: 50%;
+
+	p {
+	  color: var(--Greyscale-500, #7E92F8);
+	  text-align: center;
+	  font-size: 18px;
+	  font-style: normal;
+	  font-weight: 600;
+	  line-height: 160%; /* 28.8px */
+	  letter-spacing: 0.2px;
+	}
+
+	.line {
+	  height: 4px;
+	  align-self: stretch;
+	  border-radius: 100px;
+	  background: var(--primary-main-100, linear-gradient(180deg, #7E92F8 0%, #6972F0 100%));
+	}
+  }
+
+  .container-btn {
+	border-radius: 100px;
+	border: 2px solid var(--Primary-Extra, #E0E7F2);
+	padding: 8px 20px;
+
+	p {
+	  color: var(--Primary-Dark, #201D67);
+	  text-align: center;
+	  font-size: 16px;
+	  font-style: normal;
+	  font-weight: 600;
+	  line-height: 160%; /* 25.6px */
+	  letter-spacing: 0.2px;
+	}
+  }
+
+  .container-btn-selected {
+	border-radius: 100px;
+	background: var(--primary-main-100, linear-gradient(180deg, #7E92F8 0%, #6972F0 100%));
+	padding: 8px 20px;
+
+	p {
+	  color: var(--Others-White, #FFF);
+	  text-align: center;
+	  font-size: 16px;
+	  font-style: normal;
+	  font-weight: 600;
+	  line-height: 160%; /* 25.6px */
+	  letter-spacing: 0.2px;
+	}
+  }
+
+  .drop-down {
+	padding: 24px;
+	border-radius: 16px;
+	border: 1px solid var(--Greyscale-200, #EEE);
+	background: var(--Others-White, #FFF);
+
+	.telegram {
+	  border-radius: 100px;
+	  background: var(--primary-main-100, linear-gradient(180deg, #7E92F8 0%, #6972F0 100%));
+	  box-shadow: 4px 8px 24px 0 rgba(116, 131, 244, 0.10);
+	  padding: 16px;
+	  align-self: center;
+	}
+
+	.telegram-text {
+	  color: var(--Greyscale-900, #212121);
+	  font-size: 18px;
+	  font-style: normal;
+	  font-weight: 700;
+	  line-height: 160%; /* 28.8px */
+	  letter-spacing: 0.2px;
+	}
+
+	h6 {
+	  color: var(--Greyscale-900, #212121);
+	  font-size: 18px;
+	  font-style: normal;
+	  font-weight: 700;
+	  line-height: 160%; /* 28.8px */
+	}
+
+	.svg-rotate {
+	  transform: rotate(180deg);
+	}
+
+	p {
+	  color: var(--Greyscale-800, #424242);
+	  font-size: 14px;
+	  font-style: normal;
+	  font-weight: 500;
+	  line-height: 160%; /* 22.4px */
+	  letter-spacing: 0.2px;
+	}
+  }
+}

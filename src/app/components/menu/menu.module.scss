@@ -28,6 +28,22 @@
 		padding: 2px 4.16px 2.13px 4px;
 		justify-content: center;
 		align-items: center;
+
+		.select1 svg {
+		  stroke: #7E92F8;
+		}
+
+		.select23 svg {
+		  fill: #7E92F8;
+		}
+
+		.svg1 svg {
+		  stroke: #9E9E9E;
+		}
+
+		.svg23 svg {
+		  fill: #9E9E9E;
+		}
 	  }
 
 	  p {
@@ -38,7 +54,6 @@
 		font-weight: 500;
 		line-height: 160%; /* 16px */
 		letter-spacing: 0.2px;
-
 	  }
 	}
   }

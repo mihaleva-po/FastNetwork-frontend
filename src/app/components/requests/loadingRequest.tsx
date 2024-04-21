@@ -45,9 +45,8 @@ const LoadingRequest = () => {
                 />
             </div>
             <div className={styles['container-menu']}>
-                <Menu/>
+                <Menu selectedBlock={0}/>
             </div>
-
         </div>
     )
 }
