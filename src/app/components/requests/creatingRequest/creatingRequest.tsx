@@ -2,7 +2,8 @@ import styles from './creatingRequest.module.scss';
 import React from "react";
 import {Button} from "@/app/components/ui-components";
 import {useNavigate} from 'react-router-dom';
-import {TextareaRequest} from "@/app/components/requests/textareaRequest/textareaRequest";
+import TextRequest from "@/app/components/requests/textareaRequest/textRequest";
+// import {TextareaRequest} from "@/app/components/requests/textareaRequest/textareaRequest";
 
 const CreatingRequest = () => {
 
@@ -13,7 +14,7 @@ const CreatingRequest = () => {
     }
 
     const handleClickDone = () => {
-        navigate("/readyRequest");
+        navigate("/loadingRequest");
     }
 
     return (
@@ -25,7 +26,8 @@ const CreatingRequest = () => {
             </div>
             <div className={styles['main']}>
                 <p>Напиши самое главное о запросе</p>
-                <TextareaRequest/>
+                {/*<TextareaRequest/>*/}
+                <TextRequest textPlaceHolder={'Я хочу 30к часов в Доте, ищу того с кем можно тренироваться на пути к своей мечте!'}/>
             </div>
 
             <div className={styles['block-buttons']}>

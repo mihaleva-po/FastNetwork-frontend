@@ -1,0 +1,65 @@
+.container {
+    border-radius: 40px;
+    background: rgba(213, 213, 213, 0.17);
+    padding: 6% 5%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    height: 40vh;
+    width: 95%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    .textarea {
+        border: none;
+        background-color: transparent;
+        resize: none;
+        outline: none;
+        width: 100%;
+        text-align: center;
+        overflow-y: hidden;
+        //min-height: 50px;
+        color: #6E7981;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 25.2px */
+        //display: flex;
+        //align-self: center;
+        flex-wrap: wrap;
+        //padding: 0 10px 10px 10px !important;
+        padding: 0 !important;
+
+    }
+
+
+    h6 {
+        position: absolute;
+        bottom: 25px;
+        right: 31px;
+        color: rgba(0, 0, 0, 0.40);
+        text-align: right;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+}
+
+/* Убираем обводку при фокусе */
+#mydiv:focus {
+    outline: none;
+}
+
+//[contenteditable]:focus {
+//    outline: 0 solid transparent;
+//}
+
+.element:read-write:focus {
+    outline: none;
+}
+
+#mydiv:read-write:focus {
+    outline: none;
+}

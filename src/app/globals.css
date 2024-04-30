@@ -104,3 +104,8 @@ a {
 input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
+
+/* globalStyles.css */
+[contenteditable] {
+  outline: 0 solid transparent;
+}

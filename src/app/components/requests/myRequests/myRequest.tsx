@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import FN from '@/app/img/FN.png';
 import Image from "next/image";
 import {Button} from "@/app/components/ui-components";
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 import {Menu} from "@/app/components/menu/menu";
 import SwipeToDelete from "@/app/components/requests/swipeToDelete/swipeToDelete";
 import ModalWindow from "@/app/components/modalWindow/modalWindow";
@@ -53,6 +53,12 @@ export default function MyRequest() {
         setIsModalDeleteAll(false);
     }
 
+    const navigation = useNavigate();
+
+    const onGoHistoryRequest = (title:string) => {
+        navigation(`/historyRequest/${title}`);
+    }
+
     return (
         <div className={styles['container']}>
             <div className={styles['title']}>
@@ -62,7 +68,8 @@ export default function MyRequest() {
                 {
                     (requests.length > 0) ?
                         requests.map(request => (
-                            <div key={request.id} className={styles['block-requests']}>
+                            <div key={request.id} className={styles['block-requests']}
+                            onClick={()=>onGoHistoryRequest(request.title)}>
                                 <SwipeToDelete request={request} onDeleteRequest={onDeleteRequest}/>
                             </div>
                         ))

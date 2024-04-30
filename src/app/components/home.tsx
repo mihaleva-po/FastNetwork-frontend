@@ -18,6 +18,7 @@ import CreatingRequest from "@/app/components/requests/creatingRequest/creatingR
 import LoadingRequest from "@/app/components/requests/loadingRequest";
 import Settings from "@/app/components/settings/settings";
 import {Questions} from "@/app/components/questions/questions";
+import HistoryRequest from "@/app/components/requests/historyRequest/historyRequest";
 
 function Loading() {
     return (
@@ -53,9 +54,11 @@ function Screen() {
                 <Route path="/form" element={<Form/>}/>
                 <Route path="/myRequests" element={<MyRequest/>}/>
                 <Route path="/createRequest" element={<CreatingRequest/>}/>
-                <Route path="/readyRequest" element={<LoadingRequest/>}/>
+                <Route path="/loadingRequest" element={<LoadingRequest/>}/>
                 <Route path="/settings" element={<Settings/>}/>
                 <Route path="/questions" element={<Questions/>}/>
+                <Route path="/historyRequest/:title" element={<HistoryRequest/>}/>
+
             </Routes>
         </div>
     );

@@ -1,12 +1,20 @@
 import styles from './loadingRequest.module.scss';
-import {TextareaRequest} from "@/app/components/requests/textareaRequest/textareaRequest";
+// import {TextareaRequest} from "@/app/components/requests/textareaRequest/textareaRequest";
 import React from "react";
 import Loader from '@/app/img/loader.gif'
 import Image from "next/image";
 import {Menu} from "@/app/components/menu/menu";
+import {useLocation} from "react-router";
+import {Button} from "@/app/components/ui-components";
+import TextRequest from "@/app/components/requests/textareaRequest/textRequest";
 
+interface PropsFace {
+    isHistory?: boolean,
+    textRequest?: string | undefined
+}
 
-const LoadingRequest = () => {
+const LoadingRequest = ({isHistory = false, textRequest = undefined}: PropsFace) => {
+
     return (
         <div className={styles['container']}>
             <div className={styles['heading']}>
@@ -31,19 +39,31 @@ const LoadingRequest = () => {
                     </svg>
                 </div>
             </div>
-            <div className={styles['textarea']}>
-                <TextareaRequest/>
-            </div>
 
-            <div className={styles['loading']}>
-                <Image
-                    src={Loader}
-                    alt="loader"
-                    width={64}
-                    height={64}
-                    priority
-                />
-            </div>
+            {isHistory ?
+                <div style={{display:'flex', flexDirection:"column", gap: '5vh', alignItems:"center", justifyContent:'center'}}>
+                    <TextRequest textRequest={textRequest}/>
+                    <Button text={'Начать подбор собеседников'} width={'95%'} type="primary"/>
+                </div>
+                :
+                <div style={{display:"flex", gap: '20px', flexDirection:'column'}}>
+                    <div className={styles['textarea']}>
+                        {/*<TextareaRequest/>*/}
+                        <TextRequest textRequest={'Я хочу 30к часов в Доте, ищу того с кем можно тренироваться на пути к своей мечте!'}/>
+                    </div>
+
+                    <div className={styles['loading']}>
+                        <Image
+                            src={Loader}
+                            alt="loader"
+                            width={64}
+                            height={64}
+                            priority
+                        />
+                    </div>
+                </div>
+            }
+
             <div className={styles['container-menu']}>
                 <Menu selectedBlock={0}/>
             </div>

@@ -6,6 +6,7 @@ import {useForm} from 'react-hook-form';
 import BasicInfo from "@/app/components/basicInfo";
 import Sphere from "@/app/components/sphere/sphere";
 import {NavLink, useNavigate} from "react-router-dom";
+import TextRequest from "@/app/components/requests/textareaRequest/textRequest";
 
 const options = [
     {'value': 'female', 'title': 'Женский'},
@@ -96,7 +97,9 @@ export default function Form() {
     }, [numberScreen]);
 
     return (
-        <form className={styles['container-anketa']} onSubmit={handleSubmit(onSubmit)}>
+        <div className={styles['container-anketa']}
+             // onSubmit={handleSubmit(onSubmit)}
+        >
             <div className={styles['statusbar']}></div>
 
             <div className={styles['block-text']}>
@@ -110,16 +113,14 @@ export default function Form() {
                     {numberScreen === 3 ?
                         <Sphere/>
                         :
-                        <div>
-                                <textarea id={'textarea'} name={'area'} value={textInfa[numberScreen].placeholder}
-                                          onChange={handleChange}
-                                          onFocus={handleFocus}>
-                            </textarea>
+                        <div style={{display:"flex", justifyItems:"center", alignItems:"center"}}>
 
-                            {errors?.anketa2?.type === "required" && <p>Это поле является обязательным</p>}
-                            {errors?.anketa2?.type === "maxLength" && (
-                                <p>Длина поля не может превышать 66 символов</p>
-                            )}
+                            <TextRequest textPlaceHolder={textInfa[numberScreen].placeholder || ''}/>
+
+                            {/*{errors?.anketa2?.type === "required" && <p>Это поле является обязательным</p>}*/}
+                            {/*{errors?.anketa2?.type === "maxLength" && (*/}
+                            {/*    <p>Длина поля не может превышать 66 символов</p>*/}
+                            {/*)}*/}
                         </div>
                     }
                 </div>
@@ -138,6 +139,6 @@ export default function Form() {
                     }
                 </div>
             </div>
-        </form>
+        </div>
     )
 }
