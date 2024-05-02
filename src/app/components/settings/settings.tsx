@@ -86,7 +86,10 @@ const Settings = () => {
                         <p>Основное</p>
                         <div className={styles['line']}></div>
                         {data.Basic.map((el, i) => (
-                            <Chapter index={i} el={el}/>
+                            <div key={i}>
+                                <Chapter index={i} el={el}/>
+                            </div>
+
                         ))}
                         <div className={styles['about-us']}>
                             <p>О нас</p>

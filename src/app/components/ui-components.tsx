@@ -129,7 +129,7 @@ export const Select = (props: SelectProps) => {
         return () => {
             window.removeEventListener("click", handleClick);
         };
-    }, [onClose]);
+    }, [onClose, isOpen]);
 
     useEffect(() => {
         const placeholderEl = placeholderRef.current;

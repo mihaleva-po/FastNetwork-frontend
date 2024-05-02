@@ -72,7 +72,7 @@ export default function Index() {
     );
     useEffect(() => {
         test()
-    }, []);
+    }, [test]);
     return (
         <div>
             {/*  <Loading /> */}
