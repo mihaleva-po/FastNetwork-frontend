@@ -1,5 +1,6 @@
 import {useState} from "react";
 import styles from './swipeToDelete.module.scss';
+import {useNavigate} from "react-router-dom";
 
 
 interface RequestFace {
@@ -45,6 +46,12 @@ const SwipeToDelete = ({request, onDeleteRequest}: RequestFace) => {
         setWidth(386);
     }
 
+    const navigation = useNavigate();
+
+    const onGoHistoryRequest = (title:string) => {
+        navigation(`/historyRequest/${title}`);
+    }
+
     return (
         <div className={styles['container-big']}>
             <div className={styles['basket']} style={!isNumber ? {backgroundColor: "red"} : {}}>
@@ -60,7 +67,7 @@ const SwipeToDelete = ({request, onDeleteRequest}: RequestFace) => {
                 }
 
             </div>
-            <div className={styles['container']} style={{width: `${width}px`}} onTouchStart={handleTouchStart}
+            <div onClick={()=>onGoHistoryRequest(request.title)} className={styles['container']} style={{width: `${width}px`}} onTouchStart={handleTouchStart}
                  onTouchMove={handleTouchMove}
                  onTouchEnd={handleTouchEnd}>
                 <div className={styles['info']}>
