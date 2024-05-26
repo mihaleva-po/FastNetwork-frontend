@@ -15,6 +15,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - React, TS;
 - React Hooks: useState, useEffect;
+- React Router
   
 
 ## Getting Started
