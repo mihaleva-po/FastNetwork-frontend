@@ -2,6 +2,21 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Описание
+
+Приложение имеет следующий функционал:
+- Заполнение анкеты пользователем;
+- Создание пользователем запроса на общение;
+- Подбор собеседника с помощью нейронной сети;
+- Показ анкет подобранных собеседников;
+- Возможность просмотра предыдущий запросов;
+
+## Технологии
+
+- React, TS;
+- React Hooks: useState, useEffect;
+  
+
 ## Getting Started
 
 First, run the development server:
